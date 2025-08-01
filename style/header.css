@@ -47,6 +47,7 @@ header {
             background-color: var(--gray-400);
             border-radius: 999px;
             transition: all .3s;
+            cursor: pointer;
 
             span {
                   font: var(--text-md);
