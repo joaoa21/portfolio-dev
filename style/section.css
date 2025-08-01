@@ -6,7 +6,7 @@
         h3 {
             color: var(--red);
             margin-bottom: 8px;
-    }
+        }
     }
 
     .cards {
@@ -23,14 +23,14 @@
             flex-direction: column;
             margin: 0 auto;
             cursor: pointer;
-            transition: all .4s;
+            transition: all .4s ease;
             border: 1px solid transparent;
 
             &:hover {
-                transform: scale(1.06);
                 opacity: 90%;
                 border: 1px solid var(--gray-300);
             }
+        
 
             img {
                 margin: 12px 12px 20px;
@@ -85,10 +85,9 @@
             width: 280px;
             padding: 20px;
             cursor: pointer;
-            transition: all .4s;
+            transition: all .4s ease;
 
             &:hover {
-                transform: scale(1.06);
                 opacity: 90%;
                 border: 2px solid var(--gray-300);
             }
@@ -109,4 +108,91 @@
             }
         }
     }
+}
+
+#portfolio .cards .card span {
+    transition: color 0.1s ease;
+}   
+
+#portfolio .cards .card:hover span {
+    color: var(--blue);
+}
+
+#contato {
+    background-image: url(../assets/Background_Contacts.png);
+    background-repeat: no-repeat;
+    background-position: top, center;
+    background-size: cover;
+    height: 787px;
+    max-width: 100%;
+    text-align: center;
+    padding-block: 128px 200px;
+
+    .titulo {
+        text-align: center;
+        margin-bottom: 48px;
+
+        h3 {
+            color: var(--purple);
+        }
+
+        h2 {
+            margin-block: 8px;
+            color: var(--gray-100);
+        }
+
+        span {
+            font: var(--text-md);
+            color: var(--gray-300);
+        }
+    }
+
+    .sociais {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 16px;
+
+        .social {
+            background-color: var(--gray-400);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            max-width: 400px;
+            border-radius: 8px;
+            padding: 20px;
+            border: 2px solid transparent;
+            transition: all .3s ease;
+
+            &:hover {
+                border: 2px solid var(--blue);
+            }
+
+            span {
+                font: var(--text-md);
+                color: var(--gray-200);
+            }
+
+            .rede {
+                display: flex;
+                align-items: center;
+                gap: 12px;
+
+                i {
+                    font-size: 28px;
+                    color: var(--gray-300);
+                }
+            }
+        }
+    }
+}
+
+#contato .sociais .social i {
+    transition: all .3s ease;
+}
+
+#contato .sociais .social:hover i {
+    color: var(--blue);
 }

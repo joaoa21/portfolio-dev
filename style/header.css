@@ -66,11 +66,12 @@ header {
 
       #arrow {
             cursor: pointer;
-            transition: all .4s;
+            transition: all .3s;
+            font-size: 32px;
 
             &:hover {
-                  transform: scale(1.2);
-                  opacity: 60%;
+                  font-size: 36px;
+                  color: var(--blue);
             }
       }
 }
