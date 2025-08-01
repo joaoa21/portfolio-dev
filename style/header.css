@@ -46,6 +46,7 @@ header {
             padding: 9px 16px;
             background-color: var(--gray-400);
             border-radius: 999px;
+            transition: all .3s;
 
             span {
                   font: var(--text-md);
@@ -54,6 +55,21 @@ header {
 
             img {
                   max-width: 24px;
+            }
+
+            &:hover {
+                  transform: scale(1.08);
+                  opacity: 90%;
+            }
+      }
+
+      #arrow {
+            cursor: pointer;
+            transition: all .4s;
+
+            &:hover {
+                  transform: scale(1.2);
+                  opacity: 60%;
             }
       }
 }
