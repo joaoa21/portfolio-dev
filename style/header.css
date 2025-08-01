@@ -36,6 +36,7 @@ header {
             align-items: center;
             justify-content: center;
             gap: 16px;
+            padding-bottom: 99.5px;
       }
 
       .tag {
